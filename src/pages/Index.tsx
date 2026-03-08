@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Truck, Shield, RotateCcw, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 import ProductCard from "@/components/ProductCard";
 import { products, categories, testimonials, blogPosts } from "@/data/products";
 import Footer from "@/components/Footer";
