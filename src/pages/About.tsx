@@ -1,45 +1,42 @@
-import { Heart, Target, Users, Award } from "lucide-react";
+import { Leaf, Heart, Users, Award } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const values = [
-  { icon: Heart, title: "Customer First", desc: "Every decision starts with what's best for our customers." },
-  { icon: Target, title: "Quality Focus", desc: "We curate only the finest products from trusted brands." },
-  { icon: Users, title: "Community", desc: "Building a global community of conscious shoppers." },
-  { icon: Award, title: "Excellence", desc: "Striving for excellence in every interaction." },
+  { icon: Heart, title: "Passion", desc: "Every dish is made with love and dedication to the craft." },
+  { icon: Leaf, title: "Fresh Ingredients", desc: "Locally sourced, seasonal produce for the finest flavors." },
+  { icon: Users, title: "Community", desc: "A place where everyone feels welcome and at home." },
+  { icon: Award, title: "Excellence", desc: "Striving for perfection in every plate we serve." },
 ];
 
 const About = () => {
   return (
     <div className="min-h-screen pt-[var(--nav-height)]">
       <section className="bg-secondary py-20">
-        <div className="container-store max-w-3xl text-center">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">About Yfeey Store</h1>
+        <div className="container-restaurant max-w-3xl text-center">
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">About Us</span>
+          <h1 className="text-4xl sm:text-5xl font-display font-semibold text-foreground mt-2 mb-4">Our Story</h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We're on a mission to make premium products accessible to everyone through a seamless, 
-            trustworthy online shopping experience.
+            Founded by Chef Marco Bellini, RestaurantHub brings together the finest seasonal ingredients with techniques refined over two decades.
           </p>
         </div>
       </section>
 
       <section className="py-20">
-        <div className="container-store">
+        <div className="container-restaurant">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-display font-bold text-foreground mb-4">Our Story</h2>
+              <h2 className="text-3xl font-display font-semibold text-foreground mb-4">From Farm to Table</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded in 2024, Yfeey Store began with a simple idea: everyone deserves access to quality 
-                products at fair prices. What started as a small online shop has grown into a marketplace 
-                trusted by thousands of customers worldwide.
+                What started as a small neighborhood bistro has grown into one of the city's most beloved dining destinations. Our philosophy is simple: let the ingredients speak for themselves.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We carefully curate every product in our catalog, partnering with brands that share our 
-                commitment to quality, sustainability, and customer satisfaction.
+                We work directly with local farmers and artisans to bring you the freshest seasonal produce, sustainable seafood, and premium cuts — all prepared with care in our open kitchen.
               </p>
             </div>
-            <div className="rounded-2xl overflow-hidden">
+            <div className="overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
-                alt="Yfeey Store team"
+                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80"
+                alt="Chef preparing dishes"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -48,12 +45,12 @@ const About = () => {
       </section>
 
       <section className="py-20 bg-secondary">
-        <div className="container-store">
-          <h2 className="text-3xl font-display font-bold text-foreground text-center mb-12">Our Values</h2>
+        <div className="container-restaurant">
+          <h2 className="text-3xl font-display font-semibold text-foreground text-center mb-12">Our Values</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-card rounded-2xl p-6 border border-border/50 text-center">
-                <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <div key={title} className="bg-card p-6 border border-border/30 text-center">
+                <div className="w-12 h-12 bg-accent/10 flex items-center justify-center mx-auto mb-4">
                   <Icon className="h-6 w-6 text-accent" />
                 </div>
                 <h3 className="font-semibold text-card-foreground mb-2">{title}</h3>
