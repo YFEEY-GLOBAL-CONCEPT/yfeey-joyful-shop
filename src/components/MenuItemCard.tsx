@@ -17,7 +17,7 @@ const MenuItemCard = ({ item, showAddToCart = false }: MenuItemCardProps) => {
   };
 
   return (
-    <div className="card-hover bg-card rounded-2xl overflow-hidden border border-border/50 group">
+    <div className="card-hover bg-card rounded-none overflow-hidden border border-border/30 group">
       <div className="aspect-[4/3] overflow-hidden">
         <img
           src={item.image}
