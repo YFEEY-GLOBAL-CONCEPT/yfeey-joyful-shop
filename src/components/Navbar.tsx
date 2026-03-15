@@ -5,7 +5,6 @@ import { useCart } from "@/context/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Home", path: "/" },
   { label: "Menu", path: "/menu" },
   { label: "Order Online", path: "/order" },
   { label: "Reservations", path: "/reservations" },
@@ -33,7 +32,7 @@ const Navbar = () => {
   if (isAdmin) return null;
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-sm border-b border-border/50" : "bg-transparent"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-sm border-b border-border/50" : "bg-white/70 backdrop-blur-md"}`}>
       <div className="container-restaurant flex items-center justify-between h-[var(--nav-height)]">
         <Link to="/" className="font-display text-2xl font-semibold tracking-tight text-foreground">
           Restaurant<span className="text-accent">Hub</span>
