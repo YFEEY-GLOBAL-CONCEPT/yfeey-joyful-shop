@@ -63,8 +63,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-accent" /> +44 1624 123456
               </div>
               <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <MapPin className="h-4 w-4 text-accent" /> douglass of isle of
-                all over
+                <MapPin className="h-4 w-4 text-accent" /> Douglas, Isle of Man
               </div>
             </div>
           </div>
