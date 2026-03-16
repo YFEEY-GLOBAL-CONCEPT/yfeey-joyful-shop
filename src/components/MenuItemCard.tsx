@@ -35,7 +35,7 @@ const MenuItemCard = ({ item, showAddToCart = false }: MenuItemCardProps) => {
           <div className="p-5">
             <div className="flex items-start justify-between gap-2 mb-2">
               <h3 className="font-display text-lg font-semibold text-card-foreground">{item.name}</h3>
-              <span className="text-primary font-semibold whitespace-nowrap">€{item.price}</span>
+              <span className="text-primary font-semibold whitespace-nowrap">£{item.price}</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-3 line-clamp-2">{item.description}</p>
             <div className="flex items-center justify-between">
@@ -57,7 +57,7 @@ const MenuItemCard = ({ item, showAddToCart = false }: MenuItemCardProps) => {
         <DialogHeader>
           <DialogTitle className="font-display text-2xl">{item.name}</DialogTitle>
           <DialogDescription className="text-primary font-semibold text-lg">
-            €{item.price}
+            £{item.price}
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">

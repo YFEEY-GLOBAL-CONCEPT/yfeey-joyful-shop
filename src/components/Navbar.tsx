@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-sm border-b border-border/50" : "bg-white/70 backdrop-blur-md"}`}>
       <div className="container-restaurant flex items-center justify-between h-[var(--nav-height)]">
         <Link to="/" className="font-display text-2xl font-semibold tracking-tight text-foreground">
-          Restaurant<span className="text-accent">Hub</span>
+          Yfeey <span className="text-accent">Hub</span>
         </Link>
 
         <div className="hidden lg:flex items-center gap-7">

@@ -71,7 +71,7 @@ const OrderPage = () => {
                         <img src={ci.item.image} alt={ci.item.name} className="w-12 h-12 object-cover" />
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-medium text-card-foreground truncate">{ci.item.name}</p>
-                          <p className="text-xs text-muted-foreground">${ci.item.price}</p>
+                          <p className="text-xs text-muted-foreground">£{ci.item.price}</p>
                         </div>
                         <div className="flex items-center gap-1.5">
                           <button onClick={() => updateQuantity(ci.item.id, ci.quantity - 1)} className="w-6 h-6 bg-secondary flex items-center justify-center"><Minus className="h-3 w-3" /></button>
@@ -84,9 +84,9 @@ const OrderPage = () => {
                   </div>
 
                   <div className="space-y-2 text-sm border-t border-border pt-4 mb-4">
-                    <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>${totalPrice.toFixed(2)}</span></div>
-                    <div className="flex justify-between"><span className="text-muted-foreground">Delivery</span><span>{deliveryFee === 0 ? "Free" : `$${deliveryFee.toFixed(2)}`}</span></div>
-                    <div className="flex justify-between font-semibold text-base pt-2 border-t border-border"><span>Total</span><span>${(totalPrice + deliveryFee).toFixed(2)}</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Subtotal</span><span>£{totalPrice.toFixed(2)}</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Delivery</span><span>{deliveryFee === 0 ? "Free" : `£${deliveryFee.toFixed(2)}`}</span></div>
+                    <div className="flex justify-between font-semibold text-base pt-2 border-t border-border"><span>Total</span><span>£{(totalPrice + deliveryFee).toFixed(2)}</span></div>
                   </div>
 
                   {!showCheckout ? (
@@ -100,7 +100,7 @@ const OrderPage = () => {
                       <input type="email" placeholder="Email" required className="w-full px-4 py-2.5 bg-secondary text-sm border border-border focus:outline-none focus:ring-2 focus:ring-accent/50" />
                       <input type="text" placeholder="Delivery Address" required className="w-full px-4 py-2.5 bg-secondary text-sm border border-border focus:outline-none focus:ring-2 focus:ring-accent/50" />
                       <button type="submit" className="w-full py-3 bg-accent text-accent-foreground font-medium hover:opacity-90 transition-opacity">
-                        Place Order — ${(totalPrice + deliveryFee).toFixed(2)}
+                        Place Order — £{(totalPrice + deliveryFee).toFixed(2)}
                       </button>
                     </form>
                   )}

@@ -16,7 +16,7 @@ const About = () => {
           <span className="text-accent text-sm font-semibold uppercase tracking-widest">About Us</span>
           <h1 className="text-4xl sm:text-5xl font-display font-semibold text-foreground mt-2 mb-4">Our Story</h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Founded by Chef Marco Bellini, RestaurantHub brings together the finest seasonal ingredients with techniques refined over two decades.
+            Founded by Chef Marco Bellini, Yfeey Hub brings together the finest seasonal ingredients with techniques refined over two decades.
           </p>
         </div>
       </section>
