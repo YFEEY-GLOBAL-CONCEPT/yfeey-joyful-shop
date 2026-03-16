@@ -49,17 +49,20 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-accent" /> hello@restauranthub.com
               </div>
               <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <Phone className="h-4 w-4 text-accent" /> (212) 555-0198
+                <Phone className="h-4 w-4 text-accent" /> +44 1624 123456
               </div>
               <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <MapPin className="h-4 w-4 text-accent" /> 123 Culinary Ave, New York
+                <MapPin className="h-4 w-4 text-accent" /> Douglas, Isle of Man
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-primary-foreground/40">© 2026 RestaurantHub. All rights reserved.</p>
+          <div className="flex flex-col gap-1">
+            <p className="text-xs text-primary-foreground/40">© 2026 RestaurantHub. All rights reserved.</p>
+            <p className="text-[10px] text-primary-foreground/30">build by <a href="https://yfeey.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">yfeey.com</a></p>
+          </div>
           <div className="flex gap-6 text-xs text-primary-foreground/40">
             <span className="hover:text-accent cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-accent cursor-pointer transition-colors">Terms of Service</span>

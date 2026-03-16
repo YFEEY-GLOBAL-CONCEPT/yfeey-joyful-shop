@@ -21,6 +21,8 @@ import AdminOrders from "./pages/admin/Orders";
 import AdminReservations from "./pages/admin/Reservations";
 import AdminGallery from "./pages/admin/Gallery";
 
+import Watermark from "@/components/Watermark";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -28,6 +30,7 @@ const App = () => (
     <TooltipProvider>
       <CMSProvider>
         <CartProvider>
+          <Watermark />
           <Toaster />
           <Sonner />
           <BrowserRouter>
