@@ -16,10 +16,15 @@ const Contact = () => {
     <div className="min-h-screen pt-[var(--nav-height)]">
       <section className="bg-secondary py-16 text-center">
         <div className="container-restaurant">
-          <span className="text-accent text-sm font-semibold uppercase tracking-widest">Contact</span>
-          <h1 className="text-4xl sm:text-5xl font-display font-semibold text-foreground mt-2 mb-4">Get in Touch</h1>
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">
+            Contact
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-display font-semibold text-foreground mt-2 mb-4">
+            Get in Touch
+          </h1>
           <p className="text-muted-foreground max-w-md mx-auto">
-            Have a question or want to book a private event? We'd love to hear from you.
+            Have a question or want to book a private event? We'd love to hear
+            from you.
           </p>
         </div>
       </section>
@@ -29,41 +34,82 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Full Name</label>
-                <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50" required maxLength={100} />
+                <label className="text-sm font-medium text-foreground mb-1.5 block">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50"
+                  required
+                  maxLength={100}
+                />
               </div>
               <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Email</label>
-                <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50" required maxLength={255} />
+                <label className="text-sm font-medium text-foreground mb-1.5 block">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50"
+                  required
+                  maxLength={255}
+                />
               </div>
               <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Message</label>
-                <textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={5} className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none" required maxLength={1000} />
+                <label className="text-sm font-medium text-foreground mb-1.5 block">
+                  Message
+                </label>
+                <textarea
+                  value={form.message}
+                  onChange={(e) =>
+                    setForm({ ...form, message: e.target.value })
+                  }
+                  rows={5}
+                  className="w-full px-4 py-3 bg-secondary text-foreground border border-border text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
+                  required
+                  maxLength={1000}
+                />
               </div>
-              <button type="submit" className="px-7 py-3.5 bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
+              <button
+                type="submit"
+                className="px-7 py-3.5 bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+              >
                 Send Message
               </button>
             </form>
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-xl font-display font-semibold text-foreground mb-4">Visit Us</h2>
+                <h2 className="text-xl font-display font-semibold text-foreground mb-4">
+                  Visit Us
+                </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  We're located in douglass of isle of all over. Drop by for a meal or reach out and our team will respond within 24 hours.
+                  We're located in Douglas, Isle of Man. Drop by for a meal or
+                  reach out and our team will respond within 24 hours.
                 </p>
               </div>
               <div className="space-y-4">
                 {[
                   { icon: Mail, label: "Email", value: "hello@yfeeyhub.com" },
                   { icon: Phone, label: "Phone", value: "+44 1624 123456" },
-                  { icon: MapPin, label: "Address", value: "douglass of isle of all over" },
+                  {
+                    icon: MapPin,
+                    label: "Address",
+                    value: "Douglas, Isle of Man",
+                  },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-3">
                     <div className="w-10 h-10 bg-accent/10 flex items-center justify-center flex-shrink-0">
                       <Icon className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-foreground">{label}</p>
+                      <p className="text-sm font-medium text-foreground">
+                        {label}
+                      </p>
                       <p className="text-sm text-muted-foreground">{value}</p>
                     </div>
                   </div>
