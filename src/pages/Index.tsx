@@ -53,7 +53,7 @@ const Index = () => {
         <div className="container-restaurant flex flex-wrap justify-center gap-8 md:gap-16">
           {[
             { icon: Clock, text: "Open Daily 11am – 10pm" },
-            { icon: MapPin, text: "123 Culinary Ave, NYC" },
+            { icon: MapPin, text: "douglass of isle of all over" },
             { icon: UtensilsCrossed, text: "Fine Dining & Bar" },
           ].map(({ icon: Icon, text }) => (
             <div key={text} className="flex items-center gap-2 text-sm text-primary-foreground/80">
@@ -71,7 +71,7 @@ const Index = () => {
               <span className="text-accent text-sm font-semibold uppercase tracking-widest">Our Story</span>
               <h2 className="text-3xl sm:text-4xl font-display font-semibold text-foreground mt-2 mb-5">A Passion for Exceptional Cuisine</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded by Chef Marco Bellini, RestaurantHub brings together the finest seasonal ingredients with techniques refined over two decades of culinary mastery.
+                Founded by Chef Marco Bellini, Yfeey Hub brings together the finest seasonal ingredients with techniques refined over two decades of culinary mastery.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Every dish tells a story — from our locally sourced produce to our house-made pastas and carefully curated wine selection.

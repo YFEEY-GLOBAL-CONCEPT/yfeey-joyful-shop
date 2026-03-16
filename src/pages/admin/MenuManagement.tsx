@@ -153,7 +153,7 @@ const AdminMenu = () => {
                   </div>
                 </td>
                 <td className="px-4 py-3 text-sm text-muted-foreground capitalize">{item.category}</td>
-                <td className="px-4 py-3 text-sm font-medium text-foreground">${item.price}</td>
+                <td className="px-4 py-3 text-sm font-medium text-foreground">£{item.price}</td>
                 <td className="px-4 py-3">
                   <div className="flex gap-1 flex-wrap">
                     {item.tags?.map((t) => <span key={t} className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent">{t}</span>)}

@@ -6,7 +6,7 @@ const AdminDashboard = () => {
   const { stats, orders, reservations } = useCMS();
 
   const statCards = [
-    { label: "Total Revenue", value: `$${stats.totalRevenue.toLocaleString()}`, icon: DollarSign, color: "text-accent" },
+    { label: "Total Revenue", value: `£${stats.totalRevenue.toLocaleString()}`, icon: DollarSign, color: "text-accent" },
     { label: "Total Orders", value: stats.totalOrders, icon: ShoppingCart, color: "text-primary" },
     { label: "Reservations", value: stats.totalReservations, icon: CalendarDays, color: "text-accent" },
     { label: "Menu Items", value: stats.totalMenuItems, icon: UtensilsCrossed, color: "text-primary" },
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
                   <p className="text-xs text-muted-foreground">{new Date(o.createdAt).toLocaleDateString()}</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-sm font-medium">${o.total}</span>
+                  <span className="text-sm font-medium">£{o.total}</span>
                   <span className={`text-[10px] font-medium px-2 py-0.5 ${o.status === "delivered" ? "bg-accent/10 text-accent" : o.status === "cancelled" ? "bg-destructive/10 text-destructive" : "bg-primary/10 text-primary"}`}>
                     {o.status}
                   </span>

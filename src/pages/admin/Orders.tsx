@@ -39,7 +39,7 @@ const AdminOrders = () => {
                   <p className="text-xs text-muted-foreground">{o.email}</p>
                   <p className="text-xs text-muted-foreground">{o.phone}</p>
                 </td>
-                <td className="px-4 py-3 text-sm font-medium text-foreground">${o.total}</td>
+                <td className="px-4 py-3 text-sm font-medium text-foreground">£{o.total}</td>
                 <td className="px-4 py-3 text-sm text-muted-foreground">{new Date(o.createdAt).toLocaleDateString()}</td>
                 <td className="px-4 py-3">
                   <select value={o.status} onChange={(e) => handleStatus(o.id, e.target.value as Order["status"])} className="text-xs px-2 py-1 bg-secondary border border-border text-foreground focus:outline-none focus:ring-1 focus:ring-accent/50">
